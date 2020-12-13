@@ -19,11 +19,15 @@ abstract class CalculatorStore with Store {
 
   @action
   void setFirstNumber(int value) {
+    assert(value != null);
+
     firstNumber.value = value;
   }
 
   @action
   void setSecondNumber(int value) {
+    assert(value != null);
+
     secondNumber.value = value;
   }
 }
